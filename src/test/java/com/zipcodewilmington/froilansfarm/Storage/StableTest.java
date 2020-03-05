@@ -104,7 +104,7 @@ public class StableTest {
         Stable s = new Stable();
         Horse horse1 = new Horse("Bullet", "Black", 2);
         s.addHorse(horse1);
-        s.removeLastHorse();
+        s.removeHorse("Bullet");
         int actual = s.getNumOfHorse();
         int expected = 0;
         Assert.assertEquals(actual, expected);

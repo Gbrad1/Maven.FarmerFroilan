@@ -1,7 +1,7 @@
 package com.zipcodewilmington.froilansfarm.Storage;
 
 import com.zipcodewilmington.froilansfarm.Interfaces.Produce;
-import com.zipcodewilmington.froilansfarm.Produce.StrangeFruit;
+import com.zipcodewilmington.froilansfarm.Produce.DragonFruit;
 import com.zipcodewilmington.froilansfarm.Produce.Edible;
 
 import java.util.ArrayList;
@@ -41,7 +41,7 @@ public class FoodStorage {
     public void updateFoodCount(String foodName, Produce newProduce, int howMany) {
         if (foodStorage.containsKey(foodName)) {
             for (int i = 0; i < howMany; i++) {
-                Edible produce = new StrangeFruit();
+                Edible produce = new DragonFruit();
                 foodToBeAdded.add(produce);
                 foodStorage.put(foodName, foodToBeAdded);
             }

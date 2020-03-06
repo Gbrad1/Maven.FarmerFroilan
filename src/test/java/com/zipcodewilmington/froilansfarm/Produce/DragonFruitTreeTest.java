@@ -6,38 +6,38 @@ import org.junit.Test;
 
 import java.util.logging.Logger;
 
-public class StrangePlantTest {
+public class DragonFruitTreeTest {
 
     private static final Logger LOGGER = Logger.getLogger(FarmHouseTest.class.getName());
 
-    StrangePlant currentStrangePlant = new StrangePlant();
-    StrangeFruit currentStrangeFruit = new StrangeFruit();
-    StrangeFruit anotherStrangeFruit = new StrangeFruit();
+    DragonFruitTree currentDragonFruitTree = new DragonFruitTree();
+    DragonFruit currentDragonFruit = new DragonFruit();
+    DragonFruit anotherDragonFruit = new DragonFruit();
 
     @Test
     public void strangePlantConstructorTest() {
-        currentStrangePlant.addFruit(currentStrangeFruit);
+        currentDragonFruitTree.addFruit(currentDragonFruit);
         Integer expectedAmountOfFruitOnPlant = 1;
-        Integer actualAmountOfFruit = currentStrangePlant.plantWithFruit.size();
+        Integer actualAmountOfFruit = currentDragonFruitTree.plantWithFruit.size();
         Assert.assertEquals(expectedAmountOfFruitOnPlant, actualAmountOfFruit);
     }
 
     @Test
     public void addFruitToPlantTest() {
-        currentStrangePlant.addFruit(currentStrangeFruit);
-        currentStrangePlant.addFruit(anotherStrangeFruit);
+        currentDragonFruitTree.addFruit(currentDragonFruit);
+        currentDragonFruitTree.addFruit(anotherDragonFruit);
         Integer expectedAmountOfFruitOnPlant = 2;
-        Integer actualAmountOfFruit = currentStrangePlant.plantWithFruit.size();
+        Integer actualAmountOfFruit = currentDragonFruitTree.plantWithFruit.size();
         Assert.assertEquals(expectedAmountOfFruitOnPlant, actualAmountOfFruit);
     }
 
     @Test
     public void removeFruit() {
-        currentStrangePlant.addFruit((currentStrangeFruit));
-        currentStrangePlant.addFruit((anotherStrangeFruit));
-        currentStrangePlant.removeFruit(currentStrangeFruit);
+        currentDragonFruitTree.addFruit((currentDragonFruit));
+        currentDragonFruitTree.addFruit((anotherDragonFruit));
+        currentDragonFruitTree.removeFruit(currentDragonFruit);
         Integer expectedAmountOfFruitOnPlant = 1;
-        Integer actualAmountOfFruit = currentStrangePlant.plantWithFruit.size();
+        Integer actualAmountOfFruit = currentDragonFruitTree.plantWithFruit.size();
 
         Assert.assertEquals(expectedAmountOfFruitOnPlant, actualAmountOfFruit);
     }

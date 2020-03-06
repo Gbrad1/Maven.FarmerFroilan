@@ -1,8 +1,8 @@
 package com.zipcodewilmington.froilansfarm.Storage;
 
 import com.zipcodewilmington.froilansfarm.Interfaces.Produce;
-import com.zipcodewilmington.froilansfarm.Produce.StrangeFruit;
-import com.zipcodewilmington.froilansfarm.Produce.StrangePlant;
+import com.zipcodewilmington.froilansfarm.Produce.DragonFruit;
+import com.zipcodewilmington.froilansfarm.Produce.DragonFruitTree;
 import org.junit.Assert;
 import com.zipcodewilmington.froilansfarm.Produce.Edible;
 import org.junit.Test;
@@ -14,10 +14,10 @@ public class FoodStorageTest {
     //LinkedHashMap<String, ArrayList<Edible>> foodStorage;
     ArrayList<Edible> listOfFood = new ArrayList<>();
     ArrayList<Edible> listOfPurpleFruit = new ArrayList<>();
-    Produce strangePlant = new StrangePlant();
-    Produce anotherStrangePlant = new StrangePlant();
-    Edible currentStrangeFruit = new StrangeFruit();
-    Edible anotherStrangeFruit = new StrangeFruit();
+    Produce strangePlant = new DragonFruitTree();
+    Produce anotherStrangePlant = new DragonFruitTree();
+    Edible currentStrangeFruit = new DragonFruit();
+    Edible anotherStrangeFruit = new DragonFruit();
     String foodName = "StrangePlant";
     String purpleFruit = "purpleFruit";
 

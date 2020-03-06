@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.Produce;
 
 
-public class StrangeFruit extends Edible {
+public class DragonFruit extends Edible {
 
 }

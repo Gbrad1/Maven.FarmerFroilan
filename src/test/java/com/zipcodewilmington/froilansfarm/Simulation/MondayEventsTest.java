@@ -2,7 +2,7 @@ package com.zipcodewilmington.froilansfarm.Simulation;
 
 import com.zipcodewilmington.froilansfarm.Person.Person;
 import com.zipcodewilmington.froilansfarm.Produce.Crop;
-import com.zipcodewilmington.froilansfarm.Produce.StrangePlant;
+import com.zipcodewilmington.froilansfarm.Produce.DragonFruitTree;
 import com.zipcodewilmington.froilansfarm.Simulation.Events.MondayEvents;
 import com.zipcodewilmington.froilansfarm.Storage.CropRow;
 import com.zipcodewilmington.froilansfarm.Storage.Farm;
@@ -22,7 +22,7 @@ public class MondayEventsTest {
 
     Farm farm = Simulation.setUpScenario();
     MondayEvents monday = new MondayEvents();
-    StrangePlant newStrangePlant;
+    DragonFruitTree newDragonFruitTree;
     CropRow newCropRow;
 
     @Test
@@ -48,8 +48,8 @@ public class MondayEventsTest {
         for (int i = 0; i < 5; i++) {
             newCropRow = new CropRow();
             for (int j = 0; j < 10; j++) {
-                newStrangePlant = new StrangePlant();
-                newCropRow.addSeeds(newStrangePlant);
+                newDragonFruitTree = new DragonFruitTree();
+                newCropRow.addSeeds(newDragonFruitTree);
             }
             newField.addCropRow(newCropRow);
         }
